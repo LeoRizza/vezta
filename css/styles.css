@@ -3571,21 +3571,22 @@ input::-moz-focus-inner {
     color: var(--color-white);
     padding-left: 2.6em;
     position: relative;
+    z-index: 100;
 }
 
-.s-hero__content-about::before {
+.overlayLoco::before {
     content: "";
     display: block;
-    height: 1px;
-    width: 2.4em;
-    background-color: var(--color-border);
+    height: 100%;
+    width: 100%;
+    background: #000000;
+    opacity: 0.5;
     position: absolute;
-    left: .5em;
-    top: .8em;
+    z-index: 0;
 }
 
 .s-hero__content-about p {
-    margin-bottom: var(--vspace-2);
+    margin-top: var(--vspace-1);
 }
 
 /* hero content social
@@ -4029,7 +4030,7 @@ html.no-csstransitions .s-hero__content {
     width: 28rem;
     height: 17.6rem;
     background-image: url(../images/dots.svg);
-    opacity: .65;
+    opacity: .45;
     position: absolute;
     top: 0;
     left: 50%;
@@ -4063,7 +4064,7 @@ html.no-csstransitions .s-hero__content {
 }
 
 .s-about__photo {
-    background-image: url(../images/about-photo.jpg);
+    background-image: url(../images/NonDestructiveTesting.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
