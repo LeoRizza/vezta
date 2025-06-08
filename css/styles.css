@@ -3681,13 +3681,13 @@ input::-moz-focus-inner {
     letter-spacing: .4em;
     text-align: left;
     vertical-align: middle;
-    color: var(--color-text);
+    color: #ffffff;
     position: relative;
 }
 
 .s-hero__scroll-link:hover, 
 .s-hero__scroll-link:focus {
-    color: white;
+    color: #D96A5F;
 }
 
 
@@ -3912,7 +3912,7 @@ html.no-csstransitions .s-hero__content {
         right: calc(100% - 54vw);
     }
     .s-hero__scroll-link {
-        color: var(--color-text);
+        color: #ffffff;
     }
 }
 
