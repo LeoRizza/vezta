@@ -273,6 +273,7 @@ pre {
     /* 2 */
 }
 
+
 /* ------------------------------------------------------------------- 
  * ## text-level semantics
  * ------------------------------------------------------------------- */
@@ -3185,6 +3186,23 @@ input::-moz-focus-inner {
 .inputLoco:checked~.inputLoco:active {
     background-position: 0 -24px;
 }
+
+
+
+.logo-isotipo {
+    display: none;
+    max-height: 80px;
+    width: 90px!important;
+}
+
+.s-header.scrolled .logo-completo {
+    display: none;
+}
+
+.s-header.scrolled .logo-isotipo {
+    display: inline;
+}
+
 
 
 /* ------------------------------------------------------------------- 
