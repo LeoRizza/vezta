@@ -3192,7 +3192,7 @@ input::-moz-focus-inner {
 .logo-isotipo {
     display: none;
     max-height: 80px;
-    width: 90px!important;
+    width: 90px !important;
 }
 
 .s-header.scrolled .logo-completo {
@@ -3202,6 +3202,68 @@ input::-moz-focus-inner {
 .s-header.scrolled .logo-isotipo {
     display: inline;
 }
+
+/* ------------------------------------------------------------------- 
+ * ## leo pdf 
+ * ------------------------------------------------------------------- */
+
+.row.s-portfolio__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* espaciado entre ítems */
+    justify-content: center;
+}
+
+.folio-item2 {
+    flex: 1 1 45%;
+    /* 2 columnas con algo de margen */
+    max-width: 45%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+.pdf-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+}
+
+.pdf-modal iframe {
+    width: 90%;
+    height: 90%;
+    margin: 40px auto;
+    display: block;
+    border: none;
+    background: white;
+}
+
+.pdf-close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.folio-item2 {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.folio-item2:hover {
+    transform: scale(1.03);
+}
+
 
 
 
@@ -4581,14 +4643,14 @@ html.no-csstransitions .s-hero__content {
     padding-top: var(--vspace-1_5);
 }
 
-.folio-item {
+/* .folio-item {
     position: relative;
     overflow: hidden;
 }
 
 .folio-item__caption {
     display: none;
-}
+} */
 
 /* thumbnail
  *---------------------------------------------- */
@@ -4644,7 +4706,7 @@ html.no-csstransitions .s-hero__content {
 
 /* portfolio info
  *---------------------------------------------- */
-.folio-item__info {
+/* .folio-item__info {
     z-index: 2;
     padding: 0 3rem;
     -webkit-transform: translateY(-100%);
@@ -4714,10 +4776,10 @@ html.no-csstransitions .s-hero__content {
     border: 1px solid white;
     color: black;
 }
-
+ */
 /* on hover
  *---------------------------------------------- */
-.folio-item:hover .folio-item__thumb a::before {
+/* .folio-item:hover .folio-item__thumb a::before {
     opacity: 1;
     visibility: visible;
 }
@@ -4742,7 +4804,7 @@ html.no-csstransitions .s-hero__content {
     -webkit-transform: translateX(0);
     transform: translateX(0);
 }
-
+ */
 
 /* ------------------------------------------------------------------- 
  * responsive:
@@ -4976,6 +5038,11 @@ html.no-csstransitions .s-hero__content {
 }
 
 @media screen and (max-width: 900px) {
+    .folio-item2 {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
     .testimonials {
         max-width: 600px;
     }
