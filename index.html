@@ -52,7 +52,7 @@
     <header class="s-header">
 
         <div class="s-header__logo">
-            <a href="#hero">
+            <a href="#hero" class="logo-wrapper">
                 <img src="images/logo.svg" alt="Homepage" class="logo-completo">
                 <img src="./apple-touch-icon.png" alt="Isotipo" class="logo-isotipo">
             </a>
@@ -149,7 +149,7 @@
 
             </div>
 
-            <div class="column large-6 w-900-stack s-about__intro-text">
+            <div class="column large-7 w-900-stack s-about__intro-text">
                 <h1 class="display-1" data-aos="fade-up">
                     Comprometidos con la integridad de los activos que mueven la industria.
                 </h1>
@@ -164,35 +164,35 @@
                 </p>
             </div>
 
-            <div class="column large-6 w-900-stack s-about__photo-block">
+            <div class="column large-5 w-900-stack s-about__photo-block">
                 <div class="s-about__photo" data-aos="fade-up"></div>
             </div>
         </div>
 
         <div class="row block-large-1-2 block-tab-full s-about__process item-list">
             <div class="column item item-process" data-aos="fade-up">
-                <h3 class="item-title">Venta de Equipamiento de Vanguardia</h3>
+                <h3 class="item-title">Equipos e insumos</h3>
                 <p>
                     Acceda a la última tecnología en Ultrasonido, Partículas Magnéticas, Líquidos Penetrantes y
                     Radiografía Industrial. Equipos seleccionados por su fiabilidad, precisión y durabilidad.
                 </p>
             </div>
             <div class="column item item-process" data-aos="fade-up">
-                <h3 class="item-title">Servicio Postventa y Soporte Experto</h3>
+                <h3 class="item-title">Postventa, soporte personalizado y capacitación.</h3>
                 <p>
                     Su inversión está protegida. Nuestro equipo de especialistas garantiza la calibración, mantenimiento
                     y máxima operatividad de sus equipos para que nunca se detenga.
                 </p>
             </div>
             <div class="column item item-process" data-aos="fade-up">
-                <h3 class="item-title">Asesoramiento y Capacitación Especializada</h3>
+                <h3 class="item-title">calibración</h3>
                 <p>
                     No solo vendemos equipos, creamos capacidades. Optimizamos sus procesos de control de calidad a
                     través de la capacitación experta de sus operarios y el desarrollo de planes de inspección a medida.
                 </p>
             </div>
             <div class="column item item-process" data-aos="fade-up">
-                <h3 class="item-title">Ejecución</h3>
+                <h3 class="item-title">Rental</h3>
                 <p>
                     Deserunt rerum perspiciatis quaerat quam numquam assumenda neque.
                     Quis dolores totam voluptatibus molestiae non. Quae exercitationem
@@ -231,7 +231,7 @@
             </div>
         </div>
 
-        <div class="row block-large-1-2 block-tab-full s-services__services item-list">
+        <!-- <div class="row block-large-1-2 block-tab-full s-services__services item-list">
             <div class="column item item-service" data-aos="fade-up">
                 <span class="service-icon service-icon--product-design"></span>
                 <h3 class="item-title">Product Design</h3>
@@ -292,7 +292,7 @@
                     ipsum consequatur. blanditiis temporibus pariatur voluptatibus molestiae.
                 </p>
             </div>
-        </div>
+        </div> -->
 
     </section> <!-- end s-services -->
 
@@ -358,14 +358,14 @@
             <div class="column">
                 <div class="clients" data-aos="fade-up">
 
-                    <a href="#0" title="" class="clients__slide"><img src="images/icons/clients/dropbox.svg" /></a>
-                    <a href="#0" title="" class="clients__slide"><img src="images/icons/clients/atom.svg" /></a>
-                    <a href="#0" title="" class="clients__slide"><img src="images/icons/clients/github.svg" /></a>
-                    <a href="#0" title="" class="clients__slide"><img src="images/icons/clients/redhat.svg" /></a>
-                    <a href="#0" title="" class="clients__slide"><img src="images/icons/clients/medium.svg" /></a>
-                    <a href="#0" title="" class="clients__slide"><img src="images/icons/clients/messenger.svg" /></a>
-                    <a href="#0" title="" class="clients__slide"><img src="images/icons/clients/steam.svg" /></a>
-                    <a href="#0" title="" class="clients__slide"><img src="images/icons/clients/spotify.svg" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/icons/clients/empresa1.svg" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/icons/clients/empresa2.svg" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/icons/clients/empresa3.svg" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/icons/clients/empresa4.svg" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/icons/clients/empresa1.svg" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/icons/clients/empresa2.svg" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/icons/clients/empresa3.svg" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/icons/clients/empresa4.svg" /></a>
 
                 </div> <!-- end clients -->
             </div> <!-- end column -->
@@ -472,7 +472,37 @@
         <div class="row h-text-center">
             <div class="column">
                 <p class="s-contact__email">
-                    <a href="mailto:#0">support@vezta.com.ar</a>
+                    <form id="contactForm" class="formularioContacto">
+                        <div class="inputDiv2">
+                            <div style="margin: 0" class="inputDiv">
+                                <label for="nombre">Tu Nombre</label>
+                                <input type="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre completo" required
+                                    class="inputTexto">
+                            </div>
+                            <div class="inputDiv">
+                                <label for="empresa">Nombre de tu empresa</label>
+                                <input type="text" id="empresa" name="empresa" placeholder="Ingresá el nombre de tu proyecto"
+                                    required class="inputTexto">
+                            </div>
+                        </div>
+                        <div class="inputDiv2">
+                            <div style="margin: 0" class="inputDiv">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Ingresá tu correo electrónico" required
+                                    class="inputCorreo">
+                            </div>
+                            <div style="margin: 0" class="inputDiv">
+                                <label for="telefono">Teléfono</label>
+                                <input type="tel" id="telefono" name="telefono" placeholder="Ingresá tu número de teléfono"
+                                    class="inputTelefono">
+                            </div>
+                        </div>
+                        <div style="margin: 0">
+                            <textarea id="mensaje" name="mensaje" placeholder="Queremos saber qué tenés en mente" required
+                                class="inputMensaje"></textarea>
+                        </div>
+                        <button type="submit" class="botonEnviar">Enviar</button>
+                    </form>
                 </p>
             </div>
         </div>
@@ -511,7 +541,7 @@
             </div>
 
             <div class="column large-4 medium-12 s-footer__block--end">
-                <a href="mailto:#0" class="btn h-full-width">Asesoramiento</a>
+                <a href="mailto:support@vezta.com.ar" class="btn h-full-width asesoramientoBtn">Asesoramiento</a>
 
                 <div class="ss-copyright">
                     <span>Copyright Vezta 2025</span>

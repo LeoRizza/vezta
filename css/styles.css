@@ -3049,7 +3049,7 @@ input::-moz-focus-inner {
 
 .section-title {
     display: block;
-    margin-bottom: var(--vspace-2);
+    /* margin-bottom: var(--vspace-2); */
     position: relative;
 }
 
@@ -3061,7 +3061,8 @@ input::-moz-focus-inner {
     line-height: 1;
     letter-spacing: -0.02em;
     color: var(--color-text);
-    opacity: .1;
+    /* opacity: .1; /// cambiar para ver numeros en items*/
+    opacity: 0;
 }
 
 .section-title h3 {
@@ -3071,12 +3072,12 @@ input::-moz-focus-inner {
     padding-bottom: 2em;
     margin-top: 0;
     position: absolute;
-    left: 1em;
+    left: 0; /* cambiar a 1em si hay numeros en items */
     bottom: 0;
 }
 
 .display-1 {
-    font-size: var(--text-xxl);
+    font-size: var(--text-xl);
     font-weight: 500;
     line-height: var(--vspace-1_75);
     margin-top: 0;
@@ -3188,7 +3189,7 @@ input::-moz-focus-inner {
 }
 
 
-
+/* 
 .logo-isotipo {
     display: none;
     max-height: 80px;
@@ -3201,7 +3202,47 @@ input::-moz-focus-inner {
 
 .s-header.scrolled .logo-isotipo {
     display: inline;
+} */
+
+
+.logo-wrapper {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 100px;
 }
+
+.logo-completo,
+.logo-isotipo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    opacity: 1;
+}
+
+/* Isotipo oculto al inicio */
+.logo-isotipo {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+/* Al hacer scroll, invertimos */
+.s-header.scrolled .logo-completo {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.s-header.scrolled .logo-isotipo {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    width: auto;
+    height: 80%;
+}
+
+
+
 
 /* ------------------------------------------------------------------- 
  * ## leo pdf 
@@ -3384,9 +3425,17 @@ input::-moz-focus-inner {
     z-index: 100;
     width: 100%;
     height: 8.8rem;
-    position: absolute;
+
+    /* position: absolute;
     top: var(--vspace-0_75);
+    left: 0; */
+
+    position: fixed;
+    top: 0;
     left: 0;
+    background-color: transparent;
+    opacity: 1;
+    visibility: visible;
 }
 
 .s-header.offset {
@@ -3403,6 +3452,7 @@ input::-moz-focus-inner {
 
 .s-header.sticky {
     background-color: var(--color-white);
+    filter: drop-shadow(0 4px 10px #000000);
     opacity: 0;
     visibility: hidden;
     position: fixed;
@@ -4444,10 +4494,10 @@ html.no-csstransitions .s-hero__content {
 }
 
 .s-about__photo {
-    background-image: url(../images/NonDestructiveTesting.webp);
+    background-image: url(../images/logo.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     position: absolute;
     top: var(--vspace-0_5);
     right: var(--gutter-lg);
@@ -4915,6 +4965,7 @@ html.no-csstransitions .s-hero__content {
  * ## testimonials
  * ------------------------------------------------------------------- */
 .testimonials {
+    display: none;
     background-color: var(--color-bg);
     max-width: 800px;
     padding-top: var(--vspace-4);
@@ -5222,18 +5273,19 @@ html.no-csstransitions .s-hero__content {
 }
 
 .s-footer__block--end .btn {
-    background-color: var(--color-white);
+    background-color: var(--color-btn);
     border: .2rem solid #000000;
-    color: black;
+    color: #ffffff;
     margin-right: 0;
     margin-bottom: var(--vspace-1);
 }
 
 .s-footer__block--end .btn:hover,
 .s-footer__block--end .btn:focus {
-    background-color: var(--color-gray-19);
-    border: 0.2rem solid var(--color-gray-19);
-    color: #000000;
+    background-color: var(--color-btn-hover);
+    border-color: var(--color-btn-hover);
+    color: var(--color-2);
+    outline: 0;
 }
 
 
@@ -5249,6 +5301,10 @@ html.no-csstransitions .s-hero__content {
     padding-left: 0;
 }
 
+.inputTexto, .inputCorreo, .inputTelefono, .inputMensaje {
+    width: 100%;
+    max-width: 40dvw;
+}
 
 /* ------------------------------------------------------------------- 
  * ## copyright

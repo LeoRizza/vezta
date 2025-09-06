@@ -1,0 +1,21 @@
+body { 
+    background: white;
+}
+
+.btn-danger {
+    background-color: #F88379;
+    border-color: #ffffff;
+    margin: 0;
+    bottom: 0;
+}
+
+img {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
