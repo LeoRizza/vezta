@@ -1235,6 +1235,7 @@ textarea {
     .hide-on-mobile {
         display: none;
     }
+
 }
 
 /* ------------------------------------------------------------------- 
@@ -1255,6 +1256,8 @@ textarea {
         margin-right: 0;
         padding: 0;
     }
+
+    
 }
 
 
@@ -1477,6 +1480,8 @@ textarea {
         flex: 0 0 100%;
         max-width: 100%;
     }
+
+    
 }
 
 
@@ -5303,7 +5308,6 @@ html.no-csstransitions .s-hero__content {
 
 .inputTexto, .inputCorreo, .inputTelefono, .inputMensaje {
     width: 100%;
-    max-width: 40dvw;
 }
 
 /* ------------------------------------------------------------------- 
