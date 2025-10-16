@@ -3438,7 +3438,7 @@ input::-moz-focus-inner {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: transparent;
+    background-color: #ffffff;
     opacity: 1;
     visibility: visible;
 }
@@ -3512,6 +3512,7 @@ input::-moz-focus-inner {
     width: 200px;
     height: 100%;
     margin-bottom: 0;
+    left: 20%;
 }
 
 
@@ -3732,7 +3733,7 @@ input::-moz-focus-inner {
 
 @media screen and (max-width: 900px) {
     .s-header {
-        top: var(--vspace-0_5);
+        
         height: 8rem;
     }
 
