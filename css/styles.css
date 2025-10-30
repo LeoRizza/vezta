@@ -4319,7 +4319,7 @@ html.no-csstransitions .s-hero__content {
         display: block;
         width: 100%;
         height: 100%;
-        top: 12rem;
+        top: 10dvh;
         right: 0;
         bottom: auto;
         left: auto;
