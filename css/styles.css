@@ -1257,7 +1257,7 @@ textarea {
         padding: 0;
     }
 
-    
+
 }
 
 
@@ -1481,7 +1481,7 @@ textarea {
         max-width: 100%;
     }
 
-    
+
 }
 
 
@@ -3077,7 +3077,8 @@ input::-moz-focus-inner {
     padding-bottom: 2em;
     margin-top: 0;
     position: absolute;
-    left: 0; /* cambiar a 1em si hay numeros en items */
+    left: 0;
+    /* cambiar a 1em si hay numeros en items */
     bottom: 0;
 }
 
@@ -3116,56 +3117,23 @@ input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 
 .inputLoco {
-    -webkit-appearance: none;
-    appearance: none;
-    /* remove default */
     display: block;
     margin-bottom: 0;
     width: 24px;
     height: 24px;
-    border-radius: 12px;
+    border: none;
     cursor: pointer;
     align-self: center;
-    box-shadow: hsla(0, 0%, 100%, .15) 0 1px 1px, inset hsla(0, 0%, 0%, .5) 0 0 0 1px;
-    background-color: hsla(0, 0%, 0%, .2);
-    background-image: -webkit-radial-gradient(hsla(200, 100%, 90%, 1) 0%, hsla(200, 100%, 70%, 1) 15%, hsla(200, 100%, 60%, .3) 28%, hsla(200, 100%, 30%, 0) 70%);
-    background-repeat: no-repeat;
-    -webkit-transition: background-position .15s cubic-bezier(.8, 0, 1, 1),
-        -webkit-transform .25s cubic-bezier(.8, 0, 1, 1);
-    outline: none;
-    transition: background-position .15s cubic-bezier(.8, 0, 1, 1),
-        -webkit-transform .25s cubic-bezier(.8, 0, 1, 1);
-}
-
-.inputLoco:checked {
-    -webkit-transition: background-position .2s .15s cubic-bezier(0, 0, .2, 1),
-        -webkit-transform .25s cubic-bezier(0, 0, .2, 1);
-    transition: background-position .2s .15s cubic-bezier(0, 0, .2, 1),
-        -webkit-transform .25s cubic-bezier(0, 0, .2, 1);
-}
-
-.inputLoco:active {
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
-    -webkit-transition: -webkit-transform .1s cubic-bezier(0, 0, .2, 1);
-    transition: -webkit-transform .1s cubic-bezier(0, 0, .2, 1);
-}
-
-.langFlag {
-    width: 20px;
-    height: 20px;
-    margin: 0 3px;
+    background-color: #ffffff;
 }
 
 .radio-inputLoco {
     display: flex;
-    background-color: hsl(5, 90%, 72%, 0.1);
-    border-radius: 25px;
     padding: 10px 20px;
     margin: 0;
     position: absolute;
     top: 25%;
-    right: 10rem;
+    right: 2rem;
 }
 
 .divInputLoco {
@@ -3173,25 +3141,10 @@ input::-moz-focus-inner {
     align-content: center;
     justify-content: center;
     align-items: center;
-    margin: 0 5px;
 }
 
 
 /* The up/down direction logic */
-
-.inputLoco,
-.inputLoco:active {
-    background-position: 0 24px;
-}
-
-.inputLoco:checked {
-    background-position: 0 0;
-}
-
-.inputLoco:checked~.inputLoco,
-.inputLoco:checked~.inputLoco:active {
-    background-position: 0 -24px;
-}
 
 
 /* 
@@ -3235,16 +3188,16 @@ input::-moz-focus-inner {
 
 /* Al hacer scroll, invertimos */
 .s-header.scrolled .logo-completo {
-    opacity: 0;
+    opacity: 1;
     transform: translate(-50%, -50%) scale(1.1);
 }
 
-.s-header.scrolled .logo-isotipo {
+/* .s-header.scrolled .logo-isotipo {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
     width: auto;
     height: 80%;
-}
+} */
 
 
 
@@ -3457,7 +3410,8 @@ input::-moz-focus-inner {
 
 .s-header.sticky {
     background-color: var(--color-white);
-    filter: drop-shadow(0 4px 10px #000000);
+    /* filter: drop-shadow(0 4px 10px #000000); */
+    box-shadow: 0 4px 10px #f8837980;
     opacity: 0;
     visibility: hidden;
     position: fixed;
@@ -3543,7 +3497,7 @@ input::-moz-focus-inner {
 
 .s-header__nav a:hover,
 .s-header__nav a:focus {
-    color: white !important;
+    color: #F88379 !important;
 }
 
 .s-header__nav li {
@@ -3733,7 +3687,7 @@ input::-moz-focus-inner {
 
 @media screen and (max-width: 900px) {
     .s-header {
-        
+
         height: 8rem;
     }
 
@@ -4455,12 +4409,12 @@ html.no-csstransitions .s-hero__content {
  * ------------------------------------------------------------------- */
 .s-about {
     background-color: var(--color-bg);
-    padding-top: calc(7 * var(--space));
+    padding-top: calc(1 * var(--space));
     padding-bottom: 0;
     position: relative;
 }
 
-.s-about::before {
+/* .s-about::before {
     content: "";
     display: block;
     width: 28rem;
@@ -4470,7 +4424,7 @@ html.no-csstransitions .s-hero__content {
     position: absolute;
     top: 0;
     left: 50%;
-}
+} */
 
 .s-about .horizontal-line {
     width: 32px;
@@ -5307,7 +5261,10 @@ html.no-csstransitions .s-hero__content {
     padding-left: 0;
 }
 
-.inputTexto, .inputCorreo, .inputTelefono, .inputMensaje {
+.inputTexto,
+.inputCorreo,
+.inputTelefono,
+.inputMensaje {
     width: 100%;
 }
 
