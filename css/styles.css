@@ -2354,8 +2354,8 @@ select {
     font-size: var(--text-sm);
     line-height: var(--input-line-height);
     max-width: 100%;
-    background-color: var(--color-gray-17);
-    border: .1rem solid transparent;
+    background-color: #ffffff;
+    border: 1px solid #555555;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
     border-radius: 4px;
