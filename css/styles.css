@@ -5298,6 +5298,8 @@ html.no-csstransitions .s-hero__content {
     list-style: none;
     margin-left: 0;
     display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .s-footer__list li {
