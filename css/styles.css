@@ -2,11 +2,13 @@
  * ## fonts
  * ------------------------------------------------------------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+ */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 :root {
-    --font-1: "Nunito Sans", sans-serif;
+    --font-1: "Montserrat", sans-serif;
     --font-2: "Exo 2", sans-serif;
 }
 
@@ -2354,7 +2356,7 @@ select {
     font-size: var(--text-sm);
     line-height: var(--input-line-height);
     max-width: 100%;
-    background-color: #ffffff ;
+    background-color: #ffffff;
     border: 1px solid #555555;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
@@ -3948,14 +3950,14 @@ input::-moz-focus-inner {
 .ulQuienesSomos {
     text-decoration: none;
     list-style-type: none;
-    font-family: var(--font-2);
+    font-family: var(--font-1);
     color: var(--color-2-lighter);
 }
 
-.ulQuienesSomos li{
+.ulQuienesSomos li {
     text-decoration: none;
     list-style-type: none;
-    font-family: var(--font-2);
+    font-family: var(--font-1);
     color: var(--color-2-lighter);
 }
 
