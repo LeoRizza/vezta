@@ -3512,6 +3512,97 @@ input::-moz-focus-inner {
     margin: 0 1rem;
 }
 
+/* ------------------------------------------------------------------- 
+ * ## industry
+ * ------------------------------------------------------------------- */
+
+/* Contenedor general */
+.machines-section {
+    padding: 40px 15dvw;
+}
+
+.machines-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* GRID */
+.machines-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+/* 🔥 Responsive: menos de 900px → 1 columna */
+@media (max-width: 900px) {
+    .machines-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* TARJETAS */
+.machine-card {
+    position: relative;
+    height: 25rem;
+    border-radius: 16px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(248, 131, 121, 0.1);
+}
+
+/* Overlay oscuro */
+.machine-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    color: rgb(248, 131, 121);
+    background:#ffffff;
+}
+
+.machine-card-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.machine-card h3 {
+    color: #0b0b0c;
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+}
+
+/* IMÁGENES (cambiá por las tuyas) */
+.bg-tube {
+    background-image: url("img/tube.jpg");
+}
+
+.bg-band {
+    background-image: url("img/band.jpg");
+}
+
+.bg-press {
+    background-image: url("img/press.jpg");
+}
+
+.bg-roll {
+    background-image: url("img/roll.jpg");
+}
+
+.bg-brakes {
+    background-image: url("img/brakes.jpg");
+}
+
+.bg-other {
+    background-image: url("img/other.jpg");
+}
+
 
 /* ------------------------------------------------------------------- 
  * ## mobile menu toggle
