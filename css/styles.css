@@ -3774,7 +3774,7 @@ input::-moz-focus-inner {
 
     .s-header__nav-wrap {
         /* padding-left: 29.6rem; */
-        padding-left: 35dvw;
+        padding-left: auto;
     }
 
     .s-header__content .btn {
