@@ -3551,6 +3551,11 @@ input::-moz-focus-inner {
     background-repeat: no-repeat;
     cursor: pointer;
     box-shadow: 0 8px 20px rgba(248, 131, 121, 0.1);
+    transition: transform 0.4s ease;
+}
+
+.machine-card:hover {
+  transform: scale(1.04);   /* Zoom suave */
 }
 
 /* Overlay oscuro */
@@ -3569,7 +3574,11 @@ input::-moz-focus-inner {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    text-align: center;
 }
+
 
 .machine-card h3 {
     color: #0b0b0c;
