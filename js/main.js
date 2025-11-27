@@ -366,3 +366,46 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+
+/* FORMULARIO */
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.getElementById('contactForm');
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault(); // Evita el envío tradicional
+
+    // Tomamos los datos del formulario
+    const data = {
+      nombre: document.getElementById('nombre').value,
+      empresa: document.getElementById('empresa').value,
+      email: document.getElementById('email').value,
+      telefono: document.getElementById('telefono').value,
+      mensaje: document.getElementById('mensaje').value,
+    };
+
+    try {
+      const response = await fetch('https://hook.us2.make.com/8m65w7rnn87qxmt1q5gxmc6jdlhkteaw', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error('Error en la respuesta del servidor');
+      }
+
+      // Acá podés mostrar un mensaje de éxito
+      alert('¡Gracias! Tu mensaje fue enviado correctamente, te contactaremos en breve.');
+      form.reset();
+    } catch (error) {
+      console.error(error);
+      alert('Ocurrió un error al enviar el formulario. Por favor, intentá de nuevo.');
+    }
+  });
+});
+
