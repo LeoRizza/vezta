@@ -3948,6 +3948,15 @@ input::-moz-focus-inner {
 .ulQuienesSomos {
     text-decoration: none;
     list-style-type: none;
+    font-family: var(--font-2);
+    color: var(--color-2-lighter);
+}
+
+.ulQuienesSomos li{
+    text-decoration: none;
+    list-style-type: none;
+    font-family: var(--font-2);
+    color: var(--color-2-lighter);
 }
 
 .overlayLoco::before {
