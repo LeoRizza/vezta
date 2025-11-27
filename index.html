@@ -64,9 +64,9 @@
 
                 <ul class="s-header__nav">
                     <li><a class="smoothscroll" href="#about" title="About">Nosotros</a></li>
-                    <li><a class="smoothscroll" href="#portfolio" title="Services">Marcas</a></li>
-                    <li><a class="smoothscroll" href="#services" title="Services">Industrias</a></li>
-                    <li><a class="smoothscroll" href="#services" title="Services">Contacto</a></li>
+                    <li><a class="smoothscroll" href="#clients" title="Marcas">Marcas</a></li>
+                    <li><a class="smoothscroll" href="#services" title="Industrias">Industrias</a></li>
+                    <li><a class="smoothscroll" href="#contact" title="Contacto">Contacto</a></li>
                 </ul>
             </nav> <!-- end s-header__nav-wrap -->
 
@@ -399,7 +399,9 @@
 
     </section> --> <!-- end s-services -->
 
-    <section id="portfolio" class="s-portfolio">
+    <!-- Catalogo -->
+
+    <!--     <section id="portfolio" class="s-portfolio">
 
         <div class="row s-porfolio__top">
             <div class="column large-6 w-900-stack">
@@ -412,7 +414,7 @@
                     Nuestros productos cuentan con la mas alta tecnología. No dudes en echarles un vistazo.
                 </h1>
             </div>
-        </div> <!-- end s-portfolio__top-->
+        </div>
 
         <div class="row s-portfolio__list block-large-1-2 block-tab-full collapse folio/item3">
 
@@ -440,14 +442,14 @@
                 <img src="images/portfolio/2.png" alt="Teledyne ICM" />
             </div>
 
-        </div> <!-- folio-list -->
+        </div>
 
-    </section> <!-- end s-portfolio -->
+    </section> -->
 
 
     <!-- contact
     ================================================== -->
-    <section class="s-contact">
+    <section id="contact" class="s-contact">
         <h3 class="h6 tituloContacto">Contactanos</h3>
         <div class="divS-contact">
             <div class="row narrower s-contact__top h-text-center">
@@ -470,30 +472,26 @@
                         <div class="inputDiv2">
                             <div style="margin: 0" class="inputDiv">
                                 <label for="nombre">Tu Nombre</label>
-                                <input type="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre completo"
-                                    required class="inputTexto">
+                                <input type="text" id="nombre" name="nombre" required class="inputTexto">
                             </div>
                             <div class="inputDiv">
                                 <label for="empresa">Nombre de tu empresa</label>
-                                <input type="text" id="empresa" name="empresa"
-                                    placeholder="Ingresá el nombre de tu proyecto" required class="inputTexto">
+                                <input type="text" id="empresa" name="empresa" required class="inputTexto">
                             </div>
                         </div>
                         <div class="inputDiv2">
                             <div style="margin: 0" class="inputDiv">
                                 <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="Ingresá tu correo electrónico"
-                                    required class="inputCorreo">
+                                <input type="email" id="email" name="email" required class="inputCorreo">
                             </div>
                             <div style="margin: 0" class="inputDiv">
                                 <label for="telefono">Teléfono</label>
-                                <input type="tel" id="telefono" name="telefono"
-                                    placeholder="Ingresá tu número de teléfono" class="inputTelefono">
+                                <input type="tel" id="telefono" name="telefono" class="inputTelefono">
                             </div>
                         </div>
                         <div style="margin: 0">
-                            <textarea id="mensaje" name="mensaje" placeholder="Queremos saber qué tenés en mente"
-                                required class="inputMensaje"></textarea>
+                            <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje" required
+                                class="inputMensaje"></textarea>
                         </div>
                         <button type="submit" class="botonEnviar">Enviar</button>
                     </form>
@@ -508,18 +506,21 @@
             <div class="divS-contact">
                 <div>
                     <p>
-                        <strong>OFICINA CENTRAL</strong> <br>
-                        Gral. Daniel Cerri 1199C1168AEC <br>
-                        Cdad. Autónoma de Buenos Aires - Argentina <br>
-                        <strong>OFICINA ROSARIO</strong> <br>
+                        <strong style="font-weight: 800;">OFICINA CENTRAL</strong> <br>
+                        Gral. Daniel Cerri 1199 <br>
+                        Cdad. Autónoma de Buenos Aires - Argentina <br><br>
+                        <strong style="font-weight: 800;">OFICINA ROSARIO</strong> <br>
                         San Lorenzo 4941 <br>
                         Rosario, Santa Fe - Argentina <br>
                         <!-- <a href="tel:197-543-2345">+54 342 4555555</a> -->
                     </p>
+                    <br>
+                    <strong style="font-weight: 800; border-top: solid 1px grey; padding-top: 20px;">Horarios</strong> <br>
+                    De 9:00hs a 18:00hs <br>
                 </div>
                 <div class="divIframe">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d507.4502082055037!2d-60.690075942537824!3d-32.93503115200011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b6534cd0ca27eb%3A0xbc401fc17f6369f9!2sSan%20Lorenzo%204941%2C%20S2002%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1764153596745!5m2!1ses-419!2sar"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.3378021549297!2d-58.369209323481606!3d-34.64617095974294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334ac2539288d%3A0xb87124f1f0ac51cf!2sGral.%20Daniel%20Cerri%201199%2C%20C1168AEC%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1764236188049!5m2!1ses-419!2sar"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
@@ -538,7 +539,7 @@
 
 
                     <div class="column large-5 tab-12 s-footer__block">
-                        <h4 style="text-align: center;" class="h6">Seguinos</h4 class="h6">
+                        <h4 style="text-align: center;" class="h4">Seguinos</h4 class="h6">
 
                         <ul class="s-footer__list">
                             <li><a href="#0">Instagram</a></li>
@@ -557,7 +558,7 @@
             </div> -->
 
         </div>
-        <div class="">
+        <div class="ss-copyfooter">
 
             <div class="ss-copyright">
                 <span>Copyright Vezta 2025</span>
