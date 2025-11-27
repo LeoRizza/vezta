@@ -3070,7 +3070,7 @@ input::-moz-focus-inner {
     letter-spacing: -0.02em;
     color: var(--color-text);
     /* opacity: .1; /// cambiar para ver numeros en items*/
-    opacity: 0;
+    display: none;
 }
 
 .section-title h3 {
