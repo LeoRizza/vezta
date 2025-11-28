@@ -168,38 +168,7 @@
   /* slick slider
    * ------------------------------------------------------ */
   const ssSlickSlider = function () {
-    $(".clients").slick({
-      arrows: false,
-      dots: true,
-      infinite: true,
-      slidesToShow: 5,
-      slidesToScroll: 1,
-      pauseOnFocus: false,
-      autoplaySpeed: 1000,
-      responsive: [
-        {
-          breakpoint: 1000,
-          settings: {
-            slidesToShow: 4,
-          },
-        },
-        {
-          breakpoint: 800,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 2,
-          },
-        },
-        {
-          breakpoint: 500,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-          },
-        },
-      ],
-    });
-
+    
     $(".testimonial-slider").slick({
       arrows: true,
       dots: false,

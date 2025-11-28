@@ -1759,7 +1759,7 @@ h5,
 
 h6,
 .h6 {
-    font-size: var(--text-sm);
+    font-size: var(--text-lg);
     font-weight: 600;
     line-height: var(--vspace-0_75);
     text-transform: uppercase;
@@ -3543,7 +3543,8 @@ input::-moz-focus-inner {
 /* TARJETAS */
 .machine-card {
     position: relative;
-    height: 25rem;
+    display: flex;
+    flex-direction: column;
     border-radius: 16px;
     overflow: hidden;
     background-size: cover;
@@ -3555,7 +3556,8 @@ input::-moz-focus-inner {
 }
 
 .machine-card:hover {
-  transform: scale(1.04);   /* Zoom suave */
+    transform: scale(1.04);
+    /* Zoom suave */
 }
 
 /* Overlay oscuro */
@@ -3564,7 +3566,7 @@ input::-moz-focus-inner {
     position: absolute;
     inset: 0;
     color: rgb(248, 131, 121);
-    background:#ffffff;
+    background: #ffffff;
 }
 
 .machine-card-content {
@@ -4054,11 +4056,24 @@ input::-moz-focus-inner {
     color: var(--color-2-lighter);
 }
 
+.nosotrosTextoPrincipal {
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    font-family: var(--font-1);
+    margin: 50px 0;
+}
+
 .ulQuienesSomos li {
     text-decoration: none;
     list-style-type: none;
     font-family: var(--font-1);
     color: var(--color-2-lighter);
+}
+
+.s-about__intro-text {
+    text-align: center;
 }
 
 .overlayLoco::before {
@@ -4719,7 +4734,7 @@ html.no-csstransitions .s-hero__content {
  * ------------------------------------------------------------------- */
 .s-services {
     background-color: var(--color-bg);
-    padding-top: calc(6 * var(--space));
+    padding-top: calc(2 * var(--space));
     padding-bottom: var(--vspace-2);
 }
 
@@ -5031,8 +5046,15 @@ html.no-csstransitions .s-hero__content {
 .s-clients {
     background-color: var(--color-bg);
     padding-top: calc(6 * var(--space));
-    padding-bottom: var(--vspace-4);
     position: relative;
+}
+
+.clients {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    width: 100%;
 }
 
 
@@ -5063,6 +5085,10 @@ html.no-csstransitions .s-hero__content {
 
 .clients__slide img {
     padding: 0 2rem;
+    max-width: 280px;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .clients__slide:hover,
@@ -5199,6 +5225,14 @@ html.no-csstransitions .s-hero__content {
 }
 
 @media screen and (max-width: 900px) {
+    .clients {
+        grid-template-columns: 1fr;
+    }
+
+    .divS-contact {
+        flex-direction: column;
+    }
+
     .folio-item2 {
         flex: 1 1 100%;
         max-width: 100%;
@@ -5296,6 +5330,7 @@ html.no-csstransitions .s-hero__content {
 
 .textoContacto {
     margin-top: 3em;
+    text-align: left;
 }
 
 .s-contact__top .h6 {
@@ -5375,6 +5410,12 @@ html.no-csstransitions .s-hero__content {
     margin-top: 0;
 }
 
+.lineaFinalCoral {
+    margin-top: 15px;
+    height: 0.7rem;
+    width: 100dvw;
+    background: var(--color-1);
+}
 
 /* ------------------------------------------------------------------- 
  * ## footer block
@@ -5462,7 +5503,7 @@ html.no-csstransitions .s-hero__content {
     justify-content: center;
     position: relative;
     padding-top: 20px;
-    border-top: 1px solid #F88379;
+    border-top: 1px solid var(--color-gray-6);
     width: 30dvw;
 }
 
