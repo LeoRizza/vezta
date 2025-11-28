@@ -3400,12 +3400,13 @@ input::-moz-focus-inner {
     visibility: visible;
 }
 
-.s-header.offset {
+
+/* .s-header.offset {
     -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
     -webkit-transition: all .5s;
     transition: all .5s;
-}
+} */
 
 .s-header.scrolling {
     -webkit-transform: translateY(0);
@@ -3415,9 +3416,8 @@ input::-moz-focus-inner {
 .s-header.sticky {
     background-color: var(--color-white);
     filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.2));
-    /* box-shadow: 0 4px 10px #f8837980; */
-    opacity: 0;
-    visibility: hidden;
+/*     opacity: 0;
+    visibility: hidden; */
     position: fixed;
     top: 0;
     left: 0;
@@ -4056,6 +4056,7 @@ input::-moz-focus-inner {
     line-height: 120%;
     letter-spacing: -0.01em;
     font-family: var(--font-1);
+    color: #7b818a;
 }
 
 .textoJime2 {
