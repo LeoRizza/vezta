@@ -9,7 +9,8 @@
 
 :root {
     --font-1: "Montserrat", sans-serif;
-    --font-2: "Exo 2", sans-serif;
+    --font-2: "Montserrat", sans-serif;
+    /* --font-2: "Exo 2", sans-serif; */
 }
 
 
@@ -114,7 +115,7 @@
      * vertical space unit : 32px
      */
     --base-size: 62.5%;
-    --base-font-size: 1.4rem;
+    --base-font-size: 1.6rem;
     --space: 2.2rem;
 
     /* vertical spacing 
