@@ -4050,6 +4050,23 @@ input::-moz-focus-inner {
     flex-direction: column;
 }
 
+.textoJime1 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    font-family: var(--font-1);
+}
+
+.textoJime2 {
+    font-size: 1.8rem;
+    text-align: left;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    font-family: var(--font-1);
+}
+
 .ulQuienesSomos {
     text-decoration: none;
     list-style-type: none;
@@ -4735,7 +4752,7 @@ html.no-csstransitions .s-hero__content {
  * ------------------------------------------------------------------- */
 .s-services {
     background-color: var(--color-bg);
-    padding-top: calc(2 * var(--space));
+    padding-top: calc(3 * var(--space));
     padding-bottom: var(--vspace-2);
 }
 
@@ -5332,6 +5349,11 @@ html.no-csstransitions .s-hero__content {
 .textoContacto {
     margin-top: 3em;
     text-align: left;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    font-family: var(--font-1);
 }
 
 .s-contact__top .h6 {
@@ -5505,7 +5527,7 @@ html.no-csstransitions .s-hero__content {
     position: relative;
     padding-top: 20px;
     border-top: 1px solid var(--color-gray-6);
-    width: 30dvw;
+    width: 90dvw;
 }
 
 .ss-copyright a {
