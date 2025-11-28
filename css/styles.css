@@ -4462,6 +4462,11 @@ html.no-csstransitions .s-hero__content {
 }
 
 @media screen and (max-width: 900px) {
+
+    .nosotrosTextoPrincipal {
+        font-size: 1.8rem;
+    }
+
     .s-hero__bg {
         display: block;
         width: 100%;
