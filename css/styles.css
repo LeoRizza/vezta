@@ -4089,6 +4089,18 @@ input::-moz-focus-inner {
     font-family: var(--font-1);
 }
 
+.tituloJimeItems {
+    margin-top: 20px; 
+    font-weight: 600;
+    text-align: left;
+}
+
+.textoJimeItems {
+    margin-bottom: 10px;
+    color: #7b818a;
+    text-align: left;
+}
+
 .ulQuienesSomos {
     text-decoration: none;
     list-style-type: none;
