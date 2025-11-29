@@ -5388,11 +5388,6 @@ html.no-csstransitions .s-hero__content {
 .textoContacto {
     margin-top: 3em;
     text-align: left;
-    font-size: 2.5rem;
-    font-weight: 500;
-    line-height: 120%;
-    letter-spacing: -0.01em;
-    font-family: var(--font-1);
 }
 
 .s-contact__top .h6 {
