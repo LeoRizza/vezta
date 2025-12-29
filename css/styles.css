@@ -285,6 +285,7 @@ pre {
 
 a {
     background-color: transparent;
+    text-decoration: none;
 }
 
 /* 1. Remove the bottom border in Chrome 57-
@@ -2496,6 +2497,8 @@ input::-moz-focus-inner {
     -webkit-box-align: center;
     align-items: end;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .asesoramientoBtn {
@@ -2734,6 +2737,9 @@ input::-moz-focus-inner {
     color: #D96A5F;
 }
 
+.buttonNavLeo {
+    text-align: center;
+}
 
 /* -------------------------------------------------------------------
  * ## animate intro content
@@ -2981,6 +2987,7 @@ html.no-csstransitions .s-hero__content {
 
     .s-hero__content {
         max-width: 600px;
+        top: 40dvh;
     }
 
     .s-hero__video {
@@ -3803,6 +3810,14 @@ html.no-csstransitions .s-hero__content {
 
     .videoBanner {
         object-fit: cover;
+    }
+
+    .tituloContacto {
+        font-size: 24px;
+    }
+
+    .tituloJimeItems {
+        font-size: 20px;
     }
 }
 

@@ -61,10 +61,10 @@
             <nav class="s-header__nav-wrap">
 
                 <ul class="s-header__nav">
-                    <li><a href="#about" title="About">Nosotros</a></li>
-                    <li><a href="https://catalogo.vezta.store/" title="Catalogo">Catálogo</a></li>
-                    <li><a href="#industry" title="Industrias">Industrias</a></li>
-                    <li><a href="#contact" title="Contacto">Contacto</a></li>
+                    <li><a class="buttonNavLeo" href="#about" title="About">Nosotros</a></li>
+                    <li><a class="buttonNavLeo" href="https://catalogo.vezta.store/" title="Catalogo">Catálogo</a></li>
+                    <li><a class="buttonNavLeo" href="#industry" title="Industrias">Industrias</a></li>
+                    <li><a class="buttonNavLeo" href="#contact" title="Contacto">Contacto</a></li>
                 </ul>
             </nav> <!-- end s-header__nav-wrap -->
 
@@ -92,9 +92,10 @@
     <section id="hero" class="s-hero target-section">
 
         <div class="s-hero__bg overlayLoco">
-            <video autoplay muted loop id="myVideo" class="videoBanner">
-                <source src="./images/Banner.mp4" type="video/mp4">
+            <video autoplay muted loop playsinline webkit-playsinline preload="auto" class="videoBanner">
+                <source src="./images/Banner.mp4" type="video/mp4" />
             </video>
+
             <div class="gradient-overlay"></div>
         </div>
 
@@ -149,12 +150,13 @@
                         <p class="textoJimeItems"">menos reprocesos, mejores tiempos y más valor para cada cliente.</p>
                     </li>
                     <li>
-                        <h2 class="tituloJimeItems">Tecnología de vanguardia</h2>
+                        <h2 class=" tituloJimeItems">Tecnología de vanguardia</h2>
                         <p class="textoJimeItems"">marcas líderes en radiografía, ultrasonido, inspección visual, penetrantes, partículas magnéticas y laboratorio.</p>
                     </li>
                     <li>
-                        <h2 class="tituloJimeItems">Capacidades ampliadas</h2>
-                        <p class="textoJimeItems">equipos que complementan métodos tradicionales y fortalecen la propuesta técnica de cada proveedor.</p>
+                        <h2 class=" tituloJimeItems">Capacidades ampliadas</h2>
+                        <p class="textoJimeItems">equipos que complementan métodos tradicionales y fortalecen la
+                            propuesta técnica de cada proveedor.</p>
                     </li>
                 </ul>
 
@@ -272,7 +274,8 @@
                         <a class="clients__slide"><img src="images/icons/clients/empresa3.svg" /></a>
                         <a class="clients__slide"><img src="images/icons/clients/empresa4.svg" /></a>
                         <a class="clients__slide"><img src="images/icons/clients/empresa5.svg" /></a>
-                        <a class="clients__slide" style="max-width: 22rem;"><img src="images/icons/clients/empresa6.svg" /></a>
+                        <a class="clients__slide" style="max-width: 22rem;"><img
+                                src="images/icons/clients/empresa6.svg" /></a>
                     </div>
                 </div>
             </div>
