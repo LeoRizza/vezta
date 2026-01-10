@@ -2098,31 +2098,6 @@ input::-moz-focus-inner {
     text-align: center;
 }
 
-/* IMÁGENES (cambiá por las tuyas) */
-.bg-tube {
-    background-image: url("img/tube.jpg");
-}
-
-.bg-band {
-    background-image: url("img/band.jpg");
-}
-
-.bg-press {
-    background-image: url("img/press.jpg");
-}
-
-.bg-roll {
-    background-image: url("img/roll.jpg");
-}
-
-.bg-brakes {
-    background-image: url("img/brakes.jpg");
-}
-
-.bg-other {
-    background-image: url("img/other.jpg");
-}
-
 
 /* ------------------------------------------------------------------- 
  * ## mobile menu toggle
@@ -2650,7 +2625,7 @@ input::-moz-focus-inner {
 
 .s-about__intro-text {
     text-align: center;
-    width: 50dvw;
+    width: 70dvw;
     min-width: 250px;
 }
 

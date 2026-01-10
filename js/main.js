@@ -257,60 +257,6 @@ window.addEventListener("scroll", function () {
 
 //------------------------------------------
 
-// Abrir modal
-document.querySelectorAll(".folio-item").forEach((item) => {
-  item.addEventListener("click", function () {
-    const pdfUrl = this.getAttribute("data-pdf");
-    const iframe = document.getElementById("pdfViewer");
-    iframe.src = pdfUrl;
-    document.getElementById("pdfModal").style.display = "block";
-  });
-});
-
-// Cerrar modal
-document.querySelector(".pdf-close").addEventListener("click", function () {
-  const modal = document.getElementById("pdfModal");
-  modal.style.display = "none";
-  document.getElementById("pdfViewer").src = ""; // Limpia para evitar errores
-});
-
-// Cierre al hacer clic fuera del iframe
-window.addEventListener("click", function (event) {
-  const modal = document.getElementById("pdfModal");
-  if (event.target === modal) {
-    modal.style.display = "none";
-    document.getElementById("pdfViewer").src = "";
-  }
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  const items = document.querySelectorAll(".folio-item2");
-  const modal = document.getElementById("pdfModal");
-  const iframe = document.getElementById("pdfViewer");
-  const closeBtn = document.querySelector(".pdf-close");
-
-  items.forEach((item) => {
-    item.addEventListener("click", () => {
-      const pdfUrl = item.getAttribute("data-pdf");
-      iframe.src = pdfUrl;
-      modal.style.display = "block";
-    });
-  });
-
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none";
-    iframe.src = "";
-  });
-
-  window.addEventListener("click", (e) => {
-    if (e.target === modal) {
-      modal.style.display = "none";
-      iframe.src = "";
-    }
-  });
-});
-
-
 /* FORMULARIO */
 
 
